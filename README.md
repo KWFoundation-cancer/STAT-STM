@@ -1,6 +1,6 @@
 # STM Foundation Model v3.0
 
-A six-stage discrete-event Monte Carlo simulation framework for multi-timepoint risk stratification in Ewing sarcoma. This repository contains the production model, the figure-generation scripts, and the data files used to produce the figures in:
+A six-stage discrete-event Monte Carlo simulation framework for multi-timepoint risk stratification in Ewing Sarcoma. This repository contains the production model, the figure-generation scripts, and the data files used to produce the figures in:
 
 > Kress, J.W. *Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework.* Submitted to the *Journal of Biomedical Informatics* (2026).
 >
