@@ -104,4 +104,4 @@ Contact: jimkress_58@kressworks.org
 
 ## Acknowledgments
 
-This work is dedicated to the memory of Patience Canice Kress Hensley (1951–2009).
+The author acknowledges the support of Dave and Geri Brown, and Henriette Eles. This work is dedicated to the memory of Patience Canice Kress Hensley (1951-2009) a victim of recurrent Ewing Sarcoma..
