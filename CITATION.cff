@@ -19,8 +19,8 @@ authors:
 version: "3.0.0"
 date-released: "2026-04-24"
 license: Apache-2.0
-repository-code: "https://github.com/KressWorks/stm-foundation-model"  # UPDATE on repo creation
-url: "https://github.com/KressWorks/stm-foundation-model"              # UPDATE on repo creation
+repository-code: "https://github.com/KWFoundation-cancer/STAT-STM"  # UPDATE on repo creation
+url: "https://github.com/KWFoundation-cancer/STAT-STM"              # UPDATE on repo creation
 identifiers:
   - type: doi
     value: "10.5281/zenodo.PLACEHOLDER"   # UPDATE on Zenodo release
