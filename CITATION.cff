@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software itself and the associated journal article."
+title: "STM Foundation Model v3.0"
+abstract: >-
+  A six-stage discrete-event Monte Carlo simulation framework for
+  multi-timepoint risk stratification in Ewing sarcoma. The framework
+  integrates genetic risk factors (TP53, RB1, STAG2, CDKN2A), serial
+  biomarker dynamics with genotype-conditional weighting, post-surgical
+  ctDNA-MRD assessment, treatment-related mortality as a competing risk,
+  and 30-year adverse-effects modeling across five organ systems.
+type: software
+authors:
+  - given-names: James
+    family-names: Kress
+    name-suffix: Ph.D.
+    affiliation: The KressWorks Foundation, Northville, Michigan 48168, USA
+    email: jimkress_58@kressworks.org
+    orcid: "https://orcid.org/0000-0002-2511-6822"
+version: "3.0.0"
+date-released: "2026-04-24"
+license: Apache-2.0
+repository-code: "https://github.com/KressWorks/stm-foundation-model"  # UPDATE on repo creation
+url: "https://github.com/KressWorks/stm-foundation-model"              # UPDATE on repo creation
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PLACEHOLDER"   # UPDATE on Zenodo release
+    description: "Zenodo archive of the tagged release"
+keywords:
+  - Ewing sarcoma
+  - rare cancers
+  - Monte Carlo simulation
+  - risk stratification
+  - precision oncology
+  - survivorship
+  - biomedical informatics
+  - clinical decision support
+  - discrete-event simulation
+  - genotype-conditional biomarkers
+preferred-citation:
+  type: article
+  title: "Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework"
+  authors:
+    - given-names: James
+      family-names: Kress
+      name-suffix: Ph.D.
+      affiliation: The KressWorks Foundation, Northville, Michigan 48168, USA
+      email: jimkress_58@kressworks.org
+      orcid: "https://orcid.org/0000-0002-2511-6822"
+  journal: "Journal of Biomedical Informatics"
+  year: 2026
+  doi: "10.1016/j.jbi.PLACEHOLDER"   # UPDATE on JBI acceptance
+  url: "https://doi.org/10.1016/j.jbi.PLACEHOLDER"   # UPDATE on JBI acceptance

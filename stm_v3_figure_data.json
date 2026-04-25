@@ -1,0 +1,1159 @@
+{
+  "localized": {
+    "_metadata": {
+      "script": "stm_foundation_model_v3.0.py",
+      "cohort": "localized",
+      "n_patients": 10000,
+      "seed": 42,
+      "version": "v3.0 (v2.0 frontline + R/R extension + adverse effects)"
+    },
+    "frontline": {
+      "os_5yr_pct": 66.7,
+      "efs_5yr_pct": 61.9,
+      "trm_pct": 2.6,
+      "mrd_pos_recurrence_pct": 87.8,
+      "mrd_neg_recurrence_pct": 5.5,
+      "mrd_risk_ratio": 16.1
+    },
+    "fig2_incremental": {
+      "panel_a_genetics": {
+        "No adverse": {
+          "n": 6880,
+          "mean_efs_pct": 68.0
+        },
+        "STAG2 only": {
+          "n": 886,
+          "mean_efs_pct": 56.8
+        },
+        "RB1/CDKN2A": {
+          "n": 1472,
+          "mean_efs_pct": 53.1
+        },
+        "TP53 only": {
+          "n": 510,
+          "mean_efs_pct": 24.5
+        },
+        "TP53+STAG2": {
+          "n": 71,
+          "mean_efs_pct": 21.1
+        }
+      },
+      "panel_b_biomarkers": {
+        "No adverse": {
+          "favorable": {
+            "n": 4406,
+            "mean_efs_pct": 76.2
+          },
+          "elevated": {
+            "n": 2474,
+            "mean_efs_pct": 53.3
+          }
+        },
+        "STAG2 only": {
+          "favorable": {
+            "n": 234,
+            "mean_efs_pct": 73.9
+          },
+          "elevated": {
+            "n": 652,
+            "mean_efs_pct": 50.6
+          }
+        },
+        "RB1/CDKN2A": {
+          "favorable": {
+            "n": 360,
+            "mean_efs_pct": 69.2
+          },
+          "elevated": {
+            "n": 1112,
+            "mean_efs_pct": 47.9
+          }
+        }
+      },
+      "panel_c_brs_quartiles": {
+        "Wild-type": {
+          "Q1": {
+            "n": 2766,
+            "mean_efs_pct": 80.6
+          },
+          "Q2": {
+            "n": 2000,
+            "mean_efs_pct": 68.9
+          },
+          "Q3": {
+            "n": 2062,
+            "mean_efs_pct": 58.5
+          },
+          "Q4": {
+            "n": 1524,
+            "mean_efs_pct": 42.3
+          }
+        },
+        "STAG2+": {
+          "Q2": {
+            "n": 234,
+            "mean_efs_pct": 73.9
+          },
+          "Q3": {
+            "n": 333,
+            "mean_efs_pct": 58.3
+          },
+          "Q4": {
+            "n": 500,
+            "mean_efs_pct": 44.4
+          }
+        },
+        "TP53+": {
+          "Q3": {
+            "n": 105,
+            "mean_efs_pct": 39.0
+          },
+          "Q4": {
+            "n": 476,
+            "mean_efs_pct": 20.8
+          }
+        }
+      },
+      "panel_d_mrd": {
+        "Wild-type": {
+          "MRD_negative": {
+            "n": 5373,
+            "mean_efs_pct": 94.9
+          },
+          "MRD_positive": {
+            "n": 2360,
+            "mean_efs_pct": 15.2
+          }
+        },
+        "STAG2+": {
+          "MRD_negative": {
+            "n": 543,
+            "mean_efs_pct": 96.3
+          },
+          "MRD_positive": {
+            "n": 434,
+            "mean_efs_pct": 15.2
+          }
+        },
+        "TP53+": {
+          "MRD_negative": {
+            "n": 141,
+            "mean_efs_pct": 79.4
+          },
+          "MRD_positive": {
+            "n": 272,
+            "mean_efs_pct": 4.8
+          }
+        },
+        "TP53+STAG2": {
+          "MRD_negative": {
+            "n": 15,
+            "mean_efs_pct": 80.0
+          },
+          "MRD_positive": {
+            "n": 42,
+            "mean_efs_pct": 7.1
+          }
+        }
+      }
+    },
+    "rr_outcomes": {
+      "all_rr": {
+        "n": 3060,
+        "survival_by_year_pct": {
+          "1": 57.0,
+          "2": 37.6,
+          "3": 26.9,
+          "4": 19.8,
+          "5": 14.7,
+          "6": 11.4,
+          "7": 9.0,
+          "8": 7.5,
+          "9": 6.1,
+          "10": 5.0
+        },
+        "median_os_months": 16.2,
+        "os_5yr_pct": 14.7
+      },
+      "early_relapse": {
+        "n": 2418,
+        "survival_by_year_pct": {
+          "1": 51.6,
+          "2": 31.0,
+          "3": 19.9,
+          "4": 13.6,
+          "5": 8.9,
+          "6": 6.4,
+          "7": 4.3,
+          "8": 3.3,
+          "9": 2.4,
+          "10": 1.9
+        },
+        "median_os_months": 12.9,
+        "os_5yr_pct": 8.9
+      },
+      "late_relapse": {
+        "n": 642,
+        "survival_by_year_pct": {
+          "1": 77.4,
+          "2": 62.8,
+          "3": 53.0,
+          "4": 43.1,
+          "5": 36.4,
+          "6": 30.5,
+          "7": 26.6,
+          "8": 23.2,
+          "9": 19.9,
+          "10": 16.7
+        },
+        "median_os_months": 40.3,
+        "os_5yr_pct": 36.4
+      },
+      "salvage_regimens": {
+        "HD-IFOS": {
+          "n": 1092,
+          "efs_6mo_pct": 43.5,
+          "median_os_months": 18.1
+        },
+        "TC": {
+          "n": 579,
+          "efs_6mo_pct": 35.4,
+          "median_os_months": 13.2
+        },
+        "IT": {
+          "n": 926,
+          "efs_6mo_pct": 40.4,
+          "median_os_months": 17.4
+        },
+        "GD": {
+          "n": 463,
+          "efs_6mo_pct": 29.2,
+          "median_os_months": 12.8
+        }
+      },
+      "salvage_trm_pct": 2.4
+    },
+    "toxicity": {
+      "timepoints_years": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "chf_cumulative_pct": [
+        0.0,
+        0.3,
+        1.0,
+        2.4,
+        4.4,
+        7.3,
+        10.3
+      ],
+      "mean_gfr_ml_min": [
+        120.0,
+        115.3,
+        109.6,
+        102.7,
+        94.5,
+        84.8,
+        73.3
+      ],
+      "htn_cumulative_pct": [
+        0.0,
+        3.2,
+        9.8,
+        19.5,
+        32.1,
+        46.0,
+        60.0
+      ],
+      "smn_total_pct": [
+        0.0,
+        2.8,
+        3.5,
+        6.6,
+        9.1,
+        12.0,
+        14.6
+      ],
+      "smn_tmn_pct": [
+        0.0,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.6,
+        2.7
+      ],
+      "smn_ris_pct": [
+        0.0,
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.4
+      ],
+      "rt_cardiac": {
+        "dox_only": {
+          "n": 3952,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            1.0,
+            2.4,
+            4.1,
+            6.5,
+            8.9
+          ]
+        },
+        "combined_modality": {
+          "n": 6048,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            1.0,
+            2.4,
+            4.5,
+            7.9,
+            11.3
+          ]
+        },
+        "rt_extremity": {
+          "n": 1821,
+          "chf_by_year_pct": [
+            0.0,
+            0.2,
+            0.9,
+            1.6,
+            3.5,
+            5.4,
+            7.6
+          ],
+          "mean_heart_dose_gy": 0.0
+        },
+        "rt_pelvis": {
+          "n": 1559,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            0.7,
+            2.5,
+            3.8,
+            6.1,
+            9.0
+          ],
+          "mean_heart_dose_gy": 0.3
+        },
+        "rt_axial": {
+          "n": 922,
+          "chf_by_year_pct": [
+            0.0,
+            1.1,
+            2.2,
+            4.8,
+            9.7,
+            19.4,
+            28.4
+          ],
+          "mean_heart_dose_gy": 12.3
+        },
+        "nephro_cardiac_coupling": {
+          "gfr_below_60": {
+            "n": 123,
+            "chf_30yr_pct": 14.6
+          },
+          "gfr_60_plus": {
+            "n": 9877,
+            "chf_30yr_pct": 10.3
+          }
+        }
+      }
+    }
+  },
+  "mixed": {
+    "_metadata": {
+      "script": "stm_foundation_model_v3.0.py",
+      "cohort": "mixed",
+      "n_patients": 10000,
+      "seed": 42,
+      "version": "v3.0 (v2.0 frontline + R/R extension + adverse effects)"
+    },
+    "frontline": {
+      "os_5yr_pct": 62.6,
+      "efs_5yr_pct": 58.4,
+      "trm_pct": 3.1,
+      "mrd_pos_recurrence_pct": 89.3,
+      "mrd_neg_recurrence_pct": 7.0,
+      "mrd_risk_ratio": 12.8
+    },
+    "fig2_incremental": {
+      "panel_a_genetics": {
+        "No adverse": {
+          "n": 6477,
+          "mean_efs_pct": 65.2
+        },
+        "STAG2 only": {
+          "n": 1062,
+          "mean_efs_pct": 50.5
+        },
+        "RB1/CDKN2A": {
+          "n": 1475,
+          "mean_efs_pct": 53.2
+        },
+        "TP53 only": {
+          "n": 596,
+          "mean_efs_pct": 25.7
+        },
+        "TP53+STAG2": {
+          "n": 124,
+          "mean_efs_pct": 22.6
+        }
+      },
+      "panel_b_biomarkers": {
+        "No adverse": {
+          "favorable": {
+            "n": 4478,
+            "mean_efs_pct": 75.3
+          },
+          "elevated": {
+            "n": 1999,
+            "mean_efs_pct": 42.6
+          }
+        },
+        "STAG2 only": {
+          "favorable": {
+            "n": 322,
+            "mean_efs_pct": 68.6
+          },
+          "elevated": {
+            "n": 740,
+            "mean_efs_pct": 42.6
+          }
+        },
+        "RB1/CDKN2A": {
+          "favorable": {
+            "n": 510,
+            "mean_efs_pct": 73.5
+          },
+          "elevated": {
+            "n": 965,
+            "mean_efs_pct": 42.4
+          }
+        },
+        "TP53 only": {
+          "favorable": {
+            "n": 74,
+            "mean_efs_pct": 58.1
+          },
+          "elevated": {
+            "n": 522,
+            "mean_efs_pct": 21.1
+          }
+        }
+      },
+      "panel_c_brs_quartiles": {
+        "Wild-type": {
+          "Q1": {
+            "n": 2500,
+            "mean_efs_pct": 82.0
+          },
+          "Q2": {
+            "n": 2488,
+            "mean_efs_pct": 68.2
+          },
+          "Q3": {
+            "n": 1567,
+            "mean_efs_pct": 56.9
+          },
+          "Q4": {
+            "n": 1397,
+            "mean_efs_pct": 26.5
+          }
+        },
+        "STAG2+": {
+          "Q2": {
+            "n": 348,
+            "mean_efs_pct": 69.5
+          },
+          "Q3": {
+            "n": 373,
+            "mean_efs_pct": 58.7
+          },
+          "Q4": {
+            "n": 607,
+            "mean_efs_pct": 30.6
+          }
+        },
+        "TP53+": {
+          "Q2": {
+            "n": 74,
+            "mean_efs_pct": 58.1
+          },
+          "Q3": {
+            "n": 150,
+            "mean_efs_pct": 34.7
+          },
+          "Q4": {
+            "n": 496,
+            "mean_efs_pct": 17.3
+          }
+        }
+      },
+      "panel_d_mrd": {
+        "Wild-type": {
+          "MRD_negative": {
+            "n": 5030,
+            "mean_efs_pct": 93.8
+          },
+          "MRD_positive": {
+            "n": 2124,
+            "mean_efs_pct": 13.7
+          }
+        },
+        "STAG2+": {
+          "MRD_negative": {
+            "n": 627,
+            "mean_efs_pct": 92.8
+          },
+          "MRD_positive": {
+            "n": 528,
+            "mean_efs_pct": 12.3
+          }
+        },
+        "TP53+": {
+          "MRD_negative": {
+            "n": 169,
+            "mean_efs_pct": 76.9
+          },
+          "MRD_positive": {
+            "n": 260,
+            "mean_efs_pct": 8.8
+          }
+        },
+        "TP53+STAG2": {
+          "MRD_negative": {
+            "n": 29,
+            "mean_efs_pct": 79.3
+          },
+          "MRD_positive": {
+            "n": 64,
+            "mean_efs_pct": 7.8
+          }
+        }
+      }
+    },
+    "rr_outcomes": {
+      "all_rr": {
+        "n": 3065,
+        "survival_by_year_pct": {
+          "1": 58.0,
+          "2": 36.7,
+          "3": 24.9,
+          "4": 18.3,
+          "5": 14.4,
+          "6": 10.9,
+          "7": 8.7,
+          "8": 6.9,
+          "9": 5.5,
+          "10": 4.7
+        },
+        "median_os_months": 16.5,
+        "os_5yr_pct": 14.4
+      },
+      "early_relapse": {
+        "n": 2411,
+        "survival_by_year_pct": {
+          "1": 53.0,
+          "2": 30.5,
+          "3": 18.9,
+          "4": 12.8,
+          "5": 9.4,
+          "6": 6.6,
+          "7": 4.8,
+          "8": 3.5,
+          "9": 2.4,
+          "10": 2.0
+        },
+        "median_os_months": 13.4,
+        "os_5yr_pct": 9.4
+      },
+      "late_relapse": {
+        "n": 654,
+        "survival_by_year_pct": {
+          "1": 76.5,
+          "2": 59.3,
+          "3": 46.9,
+          "4": 38.4,
+          "5": 32.9,
+          "6": 26.6,
+          "7": 23.2,
+          "8": 19.4,
+          "9": 16.7,
+          "10": 14.4
+        },
+        "median_os_months": 32.6,
+        "os_5yr_pct": 32.9
+      },
+      "salvage_regimens": {
+        "HD-IFOS": {
+          "n": 1104,
+          "efs_6mo_pct": 46.6,
+          "median_os_months": 18.5
+        },
+        "TC": {
+          "n": 587,
+          "efs_6mo_pct": 37.3,
+          "median_os_months": 14.9
+        },
+        "IT": {
+          "n": 909,
+          "efs_6mo_pct": 40.0,
+          "median_os_months": 17.5
+        },
+        "GD": {
+          "n": 465,
+          "efs_6mo_pct": 26.5,
+          "median_os_months": 12.7
+        }
+      },
+      "salvage_trm_pct": 2.1
+    },
+    "toxicity": {
+      "timepoints_years": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "chf_cumulative_pct": [
+        0.0,
+        0.3,
+        0.9,
+        2.5,
+        4.4,
+        6.9,
+        9.8
+      ],
+      "mean_gfr_ml_min": [
+        120.0,
+        115.3,
+        109.7,
+        102.8,
+        94.7,
+        85.1,
+        73.7
+      ],
+      "htn_cumulative_pct": [
+        0.0,
+        3.3,
+        10.4,
+        20.3,
+        32.0,
+        46.5,
+        60.4
+      ],
+      "smn_total_pct": [
+        0.0,
+        2.2,
+        3.0,
+        5.8,
+        8.9,
+        11.4,
+        14.1
+      ],
+      "smn_tmn_pct": [
+        0.0,
+        1.8,
+        1.8,
+        1.9,
+        2.0,
+        2.0,
+        2.1
+      ],
+      "smn_ris_pct": [
+        0.0,
+        0.0,
+        0.1,
+        0.2,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "rt_cardiac": {
+        "dox_only": {
+          "n": 3974,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            0.9,
+            2.3,
+            3.9,
+            5.8,
+            8.2
+          ]
+        },
+        "combined_modality": {
+          "n": 6026,
+          "chf_by_year_pct": [
+            0.0,
+            0.4,
+            1.0,
+            2.7,
+            4.6,
+            7.6,
+            10.9
+          ]
+        },
+        "rt_extremity": {
+          "n": 1777,
+          "chf_by_year_pct": [
+            0.0,
+            0.2,
+            0.9,
+            2.5,
+            4.0,
+            6.2,
+            8.5
+          ],
+          "mean_heart_dose_gy": 0.0
+        },
+        "rt_pelvis": {
+          "n": 1548,
+          "chf_by_year_pct": [
+            0.0,
+            0.5,
+            0.7,
+            2.1,
+            3.7,
+            5.4,
+            7.8
+          ],
+          "mean_heart_dose_gy": 0.3
+        },
+        "rt_axial": {
+          "n": 867,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            2.0,
+            5.4,
+            9.6,
+            18.6,
+            27.5
+          ],
+          "mean_heart_dose_gy": 12.3
+        },
+        "nephro_cardiac_coupling": {
+          "gfr_below_60": {
+            "n": 216,
+            "chf_30yr_pct": 14.4
+          },
+          "gfr_60_plus": {
+            "n": 9784,
+            "chf_30yr_pct": 9.7
+          }
+        }
+      }
+    }
+  },
+  "metastatic": {
+    "_metadata": {
+      "script": "stm_foundation_model_v3.0.py",
+      "cohort": "metastatic",
+      "n_patients": 10000,
+      "seed": 42,
+      "version": "v3.0 (v2.0 frontline + R/R extension + adverse effects)"
+    },
+    "frontline": {
+      "os_5yr_pct": 43.3,
+      "efs_5yr_pct": 38.9,
+      "trm_pct": 4.4,
+      "mrd_pos_recurrence_pct": 94.1,
+      "mrd_neg_recurrence_pct": 21.1,
+      "mrd_risk_ratio": 4.5
+    },
+    "fig2_incremental": {
+      "panel_a_genetics": {
+        "No adverse": {
+          "n": 6357,
+          "mean_efs_pct": 44.3
+        },
+        "STAG2 only": {
+          "n": 966,
+          "mean_efs_pct": 36.1
+        },
+        "RB1/CDKN2A": {
+          "n": 1710,
+          "mean_efs_pct": 35.0
+        },
+        "TP53 only": {
+          "n": 575,
+          "mean_efs_pct": 8.3
+        },
+        "TP53+STAG2": {
+          "n": 106,
+          "mean_efs_pct": 4.7
+        }
+      },
+      "panel_b_biomarkers": {
+        "No adverse": {
+          "favorable": {
+            "n": 4150,
+            "mean_efs_pct": 53.0
+          },
+          "elevated": {
+            "n": 2207,
+            "mean_efs_pct": 28.0
+          }
+        },
+        "STAG2 only": {
+          "favorable": {
+            "n": 243,
+            "mean_efs_pct": 55.1
+          },
+          "elevated": {
+            "n": 723,
+            "mean_efs_pct": 29.7
+          }
+        },
+        "RB1/CDKN2A": {
+          "favorable": {
+            "n": 547,
+            "mean_efs_pct": 49.7
+          },
+          "elevated": {
+            "n": 1163,
+            "mean_efs_pct": 28.0
+          }
+        },
+        "TP53 only": {
+          "favorable": {
+            "n": 42,
+            "mean_efs_pct": 19.0
+          },
+          "elevated": {
+            "n": 533,
+            "mean_efs_pct": 7.5
+          }
+        }
+      },
+      "panel_c_brs_quartiles": {
+        "Wild-type": {
+          "Q1": {
+            "n": 2687,
+            "mean_efs_pct": 56.9
+          },
+          "Q2": {
+            "n": 2010,
+            "mean_efs_pct": 46.8
+          },
+          "Q3": {
+            "n": 1924,
+            "mean_efs_pct": 34.3
+          },
+          "Q4": {
+            "n": 1446,
+            "mean_efs_pct": 19.6
+          }
+        },
+        "STAG2+": {
+          "Q1": {
+            "n": 93,
+            "mean_efs_pct": 61.3
+          },
+          "Q2": {
+            "n": 168,
+            "mean_efs_pct": 52.4
+          },
+          "Q3": {
+            "n": 398,
+            "mean_efs_pct": 40.7
+          },
+          "Q4": {
+            "n": 593,
+            "mean_efs_pct": 19.9
+          }
+        },
+        "TP53+": {
+          "Q2": {
+            "n": 42,
+            "mean_efs_pct": 19.0
+          },
+          "Q3": {
+            "n": 209,
+            "mean_efs_pct": 11.0
+          },
+          "Q4": {
+            "n": 430,
+            "mean_efs_pct": 5.1
+          }
+        }
+      },
+      "panel_d_mrd": {
+        "Wild-type": {
+          "MRD_negative": {
+            "n": 4060,
+            "mean_efs_pct": 80.5
+          },
+          "MRD_positive": {
+            "n": 1788,
+            "mean_efs_pct": 8.1
+          }
+        },
+        "STAG2+": {
+          "MRD_negative": {
+            "n": 487,
+            "mean_efs_pct": 80.7
+          },
+          "MRD_positive": {
+            "n": 419,
+            "mean_efs_pct": 7.6
+          }
+        },
+        "TP53+": {
+          "MRD_negative": {
+            "n": 89,
+            "mean_efs_pct": 34.8
+          },
+          "MRD_positive": {
+            "n": 146,
+            "mean_efs_pct": 11.6
+          }
+        },
+        "TP53+STAG2": {
+          "MRD_negative": {
+            "n": 14,
+            "mean_efs_pct": 28.6
+          },
+          "MRD_positive": {
+            "n": 23,
+            "mean_efs_pct": 4.3
+          }
+        }
+      }
+    },
+    "rr_outcomes": {
+      "all_rr": {
+        "n": 3219,
+        "survival_by_year_pct": {
+          "1": 57.6,
+          "2": 37.6,
+          "3": 26.3,
+          "4": 19.3,
+          "5": 14.6,
+          "6": 11.6,
+          "7": 8.8,
+          "8": 7.1,
+          "9": 5.6,
+          "10": 4.6
+        },
+        "median_os_months": 16.5,
+        "os_5yr_pct": 14.6
+      },
+      "early_relapse": {
+        "n": 2554,
+        "survival_by_year_pct": {
+          "1": 52.5,
+          "2": 31.0,
+          "3": 19.9,
+          "4": 13.6,
+          "5": 9.3,
+          "6": 6.7,
+          "7": 4.7,
+          "8": 3.4,
+          "9": 2.4,
+          "10": 1.5
+        },
+        "median_os_months": 13.5,
+        "os_5yr_pct": 9.3
+      },
+      "late_relapse": {
+        "n": 665,
+        "survival_by_year_pct": {
+          "1": 77.0,
+          "2": 63.0,
+          "3": 50.7,
+          "4": 41.2,
+          "5": 34.7,
+          "6": 30.2,
+          "7": 24.5,
+          "8": 21.2,
+          "9": 17.9,
+          "10": 16.2
+        },
+        "median_os_months": 36.5,
+        "os_5yr_pct": 34.7
+      },
+      "salvage_regimens": {
+        "HD-IFOS": {
+          "n": 1149,
+          "efs_6mo_pct": 45.9,
+          "median_os_months": 18.6
+        },
+        "TC": {
+          "n": 627,
+          "efs_6mo_pct": 37.3,
+          "median_os_months": 15.1
+        },
+        "IT": {
+          "n": 974,
+          "efs_6mo_pct": 40.6,
+          "median_os_months": 17.7
+        },
+        "GD": {
+          "n": 469,
+          "efs_6mo_pct": 28.6,
+          "median_os_months": 12.6
+        }
+      },
+      "salvage_trm_pct": 1.8
+    },
+    "toxicity": {
+      "timepoints_years": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "chf_cumulative_pct": [
+        0.0,
+        0.4,
+        0.9,
+        2.2,
+        3.9,
+        6.4,
+        9.3
+      ],
+      "mean_gfr_ml_min": [
+        120.0,
+        115.6,
+        110.5,
+        104.1,
+        96.6,
+        87.8,
+        77.2
+      ],
+      "htn_cumulative_pct": [
+        0.0,
+        3.6,
+        10.6,
+        20.4,
+        32.7,
+        45.8,
+        59.2
+      ],
+      "smn_total_pct": [
+        0.0,
+        2.6,
+        3.2,
+        5.9,
+        8.4,
+        11.2,
+        13.9
+      ],
+      "smn_tmn_pct": [
+        0.0,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6
+      ],
+      "smn_ris_pct": [
+        0.0,
+        0.0,
+        0.1,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "rt_cardiac": {
+        "dox_only": {
+          "n": 3928,
+          "chf_by_year_pct": [
+            0.0,
+            0.3,
+            0.7,
+            1.7,
+            3.1,
+            5.1,
+            7.3
+          ]
+        },
+        "combined_modality": {
+          "n": 6072,
+          "chf_by_year_pct": [
+            0.0,
+            0.4,
+            1.0,
+            2.5,
+            4.3,
+            7.2,
+            10.6
+          ]
+        },
+        "rt_extremity": {
+          "n": 1730,
+          "chf_by_year_pct": [
+            0.0,
+            0.4,
+            0.9,
+            1.9,
+            3.6,
+            5.4,
+            7.7
+          ],
+          "mean_heart_dose_gy": 0.0
+        },
+        "rt_pelvis": {
+          "n": 1556,
+          "chf_by_year_pct": [
+            0.0,
+            0.6,
+            1.2,
+            3.0,
+            4.2,
+            6.1,
+            8.7
+          ],
+          "mean_heart_dose_gy": 0.3
+        },
+        "rt_axial": {
+          "n": 964,
+          "chf_by_year_pct": [
+            0.0,
+            0.6,
+            1.3,
+            3.6,
+            7.4,
+            14.6,
+            24.1
+          ],
+          "mean_heart_dose_gy": 12.3
+        },
+        "nephro_cardiac_coupling": {
+          "gfr_below_60": {
+            "n": 351,
+            "chf_30yr_pct": 17.9
+          },
+          "gfr_60_plus": {
+            "n": 9649,
+            "chf_30yr_pct": 9.0
+          }
+        }
+      }
+    }
+  }
+}
