@@ -21,10 +21,6 @@ This is **research code**. It is not a medical device. It has not been cleared b
 | `stm_foundation_model_v3_0.py` | Production simulation model. Six-stage discrete-event Monte Carlo framework with genotype-conditional biomarker weighting, post-surgical MRD assessment, and 30-year survivorship modeling. |
 | `stm_v3_figure_data.json` | Authoritative data source for all main-text and supplementary figures. Output of validated simulation runs against COG AEWS0031, Euro-EWING 99, and rEECur trial data. |
 | `data_brs_and_fig2.json` | Authoritative data source for the Biomarker Risk Score (BRS) discrimination metrics and the genetic-subgroup / biomarker / quartile / MRD panels. **Filename is historical**: `fig2` predates the figure renumbering performed during manuscript revision. The file is referenced by name inside several scripts and has been retained for traceability with the manuscript. |
-| `gen_all_figures_pub.py` | PNG figure generator (publication, 300 DPI). Produces all main-text figures from the JSON data sources. |
-| `gen_fig12.py` | Generator for Figure 1 only (framework architecture diagram). **Filename is historical**: this script once produced Figure 1 and the legacy combined Figure 2 in a single run; after the figure split during manuscript revision, only the Figure 1 path remains active. The filename was kept to preserve traceability with earlier internal records. |
-| `gen_all_figures_pptx.py` | PowerPoint figure generator (editable layout). Produces the same figures as `gen_all_figures_pub.py` but as native PPTX shapes (no chart objects), suitable for production-stage editing prior to camera-ready submission. |
-| `gen_fig_s1_pptx.py` | Generator for Supplementary Figure S1 (PPTX, editable). |
 | `LICENSE` | Apache License 2.0. |
 | `CITATION.cff` | Citation File Format metadata for automated citation tools. |
 
@@ -53,20 +49,9 @@ Model (`stm_foundation_model_v3_0.py`):
 - `numpy`
 - `pandas`
 
-PNG figure scripts (`gen_all_figures_pub.py`, `gen_fig12.py`):
-- `matplotlib`
-- `numpy`
-
-PPTX figure scripts (`gen_all_figures_pptx.py`, `gen_fig_s1_pptx.py`):
-- `python-pptx`
-- `matplotlib`
-- `numpy`
 
 No version pins are imposed; any reasonably current release of the above libraries is expected to work. If a divergence is observed against the JBI figures, please open an issue with the library versions used.
 
-### Regenerating the figures
-
-The JSON files in this repository are the authoritative inputs. The figure scripts read these files directly; no model re-run is required to reproduce the figures. To re-run the model from scratch and regenerate the JSON inputs as well, execute `stm_foundation_model_v3_0.py` with seed 42 and `n_patients = 10000` (the values used in the manuscript).
 
 ---
 
