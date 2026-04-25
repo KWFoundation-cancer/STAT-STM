@@ -52,6 +52,12 @@ Model (`stm_foundation_model_v3_0.py`):
 
 No version pins are imposed; any reasonably current release of the above libraries is expected to work. If a divergence is observed against the JBI figures, please open an issue with the library versions used.
 
+---
+
+### Running the model
+bash
+python stm_foundation_model_v3_0.py
+No arguments. The simulation runs three cohorts (localized, mixed, metastatic) at 10,000 patients each with fixed seed 42, and writes outputs to a sibling outputs_v3/ directory: per-cohort CSVs and stm_v3_figure_data.json (the data file used to produce all figures in the manuscript).
 
 ---
 
