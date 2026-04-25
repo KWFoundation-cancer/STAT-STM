@@ -23,7 +23,7 @@ repository-code: "https://github.com/KWFoundation-cancer/STAT-STM"  # UPDATE on 
 url: "https://github.com/KWFoundation-cancer/STAT-STM"              # UPDATE on repo creation
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.PLACEHOLDER"   # UPDATE on Zenodo release
+    value: "10.5281/zenodo.19752792"   # UPDATE on Zenodo release
     description: "Zenodo archive of the tagged release"
 keywords:
   - Ewing sarcoma
