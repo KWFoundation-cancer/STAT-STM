@@ -1,6 +1,3 @@
-# STAT-STM
-Python code for the Statistical STM model.
-
 # STM Foundation Model v3.0
 
 A six-stage discrete-event Monte Carlo simulation framework for multi-timepoint risk stratification in Ewing sarcoma. This repository contains the production model, the figure-generation scripts, and the data files used to produce the figures in:
@@ -40,7 +37,7 @@ This is **research code**. It is not a medical device. It has not been cleared b
 The production model has md5:
 
 ```
-d2093c983f53841aa1c08d5b9f491603  stm_foundation_model_v3_0.py
+ce573aea547a98a72cb3f107ca2cff33  stm_foundation_model_v3_0.py
 ```
 
 This is the byte-identical copy used to produce every numerical result in the JBI submission.
@@ -107,5 +104,4 @@ Contact: jimkress_58@kressworks.org
 
 ## Acknowledgments
 
-This work is dedicated to the memory of Patience Canice Kress Hensley (1951–2009). The support of Dave and Geri Brown is very much appreciated.
-
+This work is dedicated to the memory of Patience Canice Kress Hensley (1951–2009).
