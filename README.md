@@ -33,7 +33,7 @@ This is **research code**. It is not a medical device. It has not been cleared b
 The production model has md5:
 
 ```
-ce573aea547a98a72cb3f107ca2cff33  stm_foundation_model_v3_0.py
+b85bba87fc23b4a168fce56b3bbe3023 stm_foundation_model_v3_0.py
 ```
 
 This is the byte-identical copy used to produce every numerical result in the JBI submission.
